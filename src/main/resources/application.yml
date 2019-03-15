@@ -6,3 +6,10 @@ spring:
     password: 123123
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/febs_shiro_jwt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+mybatis-plus:
+  mapper-locations: classpath:mapper/*/*.xml
+  global-config:
+    #Mapper 对应的 XML 文件会自动刷新，生产环境不建议开启
+    refresh: true 
+    # 关闭 mybatis-plus的 banner
+    banner: false
